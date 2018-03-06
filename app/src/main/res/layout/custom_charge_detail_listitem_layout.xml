@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/charge_detail_list_click_selector"
+              android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip"
+                    android:paddingBottom="8.0dip" android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@+id/charge_detail_listItem_image"
+                   android:background="@drawable/charge_detail_paytype_default" android:layout_width="40.0dip"
+                   android:layout_height="40.0dip"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/charge_detail_listItem_image">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end"
+                      android:id="@+id/charge_detail_listItem_place" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="大喜屋酒屋" android:singleLine="true"
+                      android:maxLength="16"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_font_color"
+                          android:id="@+id/charge_detail_listItem_payPerson" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:text="我"/>
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_font_color"
+                          android:id="@+id/charge_detail_listItem_spendType" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="支付"/>
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_font_color"
+                          android:id="@+id/charge_detail_listItem_spendMoney" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="￥1425"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/common_font_color"
+                      android:id="@+id/charge_detail_listItem_type" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="应收"/>
+            <TextView android:textSize="14.0sp" android:textColor="@color/common_text_click_color"
+                      android:id="@+id/charge_detail_listItem_money" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="￥120"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:id="@+id/charge_detail_listItem_line" android:layout_marginLeft="12.0dip"
+              style="@style/common_line"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/china_number_layout" style="@style/choose_country_item_root">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中国" />
+        <ImageView android:id="@+id/china_number_enter" android:background="@drawable/enter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="+86" android:layout_toLeftOf="@id/china_number_enter" />
+    </RelativeLayout>
+    <TextView android:layout_marginLeft="15.0dip" style="@style/common_line" />
+    <RelativeLayout android:id="@+id/taiwan_number_layout" style="@style/choose_country_item_root">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="台湾" />
+        <ImageView android:id="@+id/taiwan_number_enter" android:background="@drawable/enter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="+886" android:layout_toLeftOf="@id/taiwan_number_enter" />
+    </RelativeLayout>
+    <TextView android:layout_marginLeft="15.0dip" style="@style/common_line" />
+    <RelativeLayout android:id="@+id/hongkong_number_layout" style="@style/choose_country_item_root">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="香港" />
+        <ImageView android:id="@+id/hongkong_number_enter" android:background="@drawable/enter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="+852" android:layout_toLeftOf="@id/hongkong_number_enter" />
+    </RelativeLayout>
+    <TextView android:layout_marginLeft="15.0dip" style="@style/common_line" />
+    <RelativeLayout android:id="@+id/macao_number_layout" style="@style/choose_country_item_root">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="澳门" />
+        <ImageView android:id="@+id/macao_number_enter" android:background="@drawable/enter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="+853" android:layout_toLeftOf="@id/macao_number_enter" />
+    </RelativeLayout>
+</LinearLayout>

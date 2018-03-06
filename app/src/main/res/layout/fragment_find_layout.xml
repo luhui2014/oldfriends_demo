@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:orientation="vertical" >
+
+    <include android:id="@+id/fragment_find_top_layout" layout="@layout/common_top_layout"/>
+    <ListView android:id="@+id/lvMessages" android:fadingEdge="none" android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent"
+              android:divider="@android:color/transparent" android:dividerHeight="0.0dip" style="@style/list_view"/>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/emptyBg" android:visibility="gone"
+                    android:layout_width="fill_parent" android:layout_height="fill_parent"
+                    android:layout_marginBottom="50.0dip">
+        <ImageView android:id="@+id/emptyBg1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/nim_messages_list_empty_bg" android:layout_centerInParent="true"
+                   android:contentDescription="@string/empty"/>
+        <TextView android:gravity="center" android:id="@+id/message_list_empty_hint" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:layout_marginTop="5.0dip"
+                  android:layout_below="@id/emptyBg1" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

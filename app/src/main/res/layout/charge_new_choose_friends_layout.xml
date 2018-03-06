@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/charge_chooseFriends_top" layout="@layout/common_font_top_layout" />
+    <TextView style="@style/common_line" />
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="16.0sp" android:textColor="#ff7c7c7c" android:textColorHint="#ff7c7c7c" android:id="@+id/charge_chooseFriends_edit" android:background="@color/transparent" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search" android:singleLine="true" android:drawableLeft="@drawable/search_icon" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+    <TextView style="@style/common_line" />
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView android:id="@+id/charge_chooseFriends_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:divider="@null" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zms="http://schemas.android.com/apk/res-auto">
+
+    <include android:id="@+id/bill_split_type_top" layout="@layout/common_font_top_layout"/>
+
+    <TextView android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0dip"/>
+
+    <com.oldfriends.app.view.PagerSlidingTabStrip
+            android:id="@+id/tabstrip" android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            zms:pstsIndicatorColor="#ffff0000"
+            zms:pstsUnderlineColor="@color/underline_color"
+            zms:pstsDividerColor="#ffffffff"
+            zms:pstsIndicatorHeight="2.0dip"
+            zms:pstsUnderlineHeight="1.0dip"
+            zms:pstsTabPaddingLeftRight="15.0dip"
+            zms:pstsShouldExpand="true"
+            zms:zmsTabTextSize="16.0sp"
+            zms:zmsTabTextColor="#ff333333"
+            zms:zmsSelectedTabTextSize="16.0sp"
+            zms:zmsSelectedTabTextColor="#ffff0000"/>
+
+    <com.oldfriends.app.view.CustomNoScrollViewPager
+            android:id="@+id/bill_split_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:overScrollMode="never"/>
+</LinearLayout>

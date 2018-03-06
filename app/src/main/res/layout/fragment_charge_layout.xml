@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/fragment_charge_top_layout" layout="@layout/common_top_layout" />
+    <TextView style="@style/common_line" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/fragment_charge_get" android:paddingTop="4.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应收" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_red_color" android:id="@+id/fragment_charge_getMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/fragment_charge_sum" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="合计" />
+                <ImageView android:background="@drawable/fragment_charge_sum_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff03c9a9" android:id="@+id/fragment_charge_sumMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/fragment_charge_pay" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应付" />
+                <ImageView android:background="@drawable/fragment_charge_sum_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff03c9a9" android:id="@+id/fragment_charge_payMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-￥0" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView style="@style/common_line" />
+    <ImageView android:id="@+id/cursor" android:background="#ffff0000" android:layout_width="150.0dip" android:layout_height="4.0dip" android:layout_marginTop="-5.0dip" android:scaleType="matrix" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/search_edit_layout" android:background="#ffececec" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/charge_search_layout" android:background="@drawable/comment_search_border" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+            <ImageView android:background="@drawable/search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffcccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/search" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView style="@style/common_line" />
+    <com.oldfriends.app.view.ListViewChargeCompat android:id="@+id/group_charge_list" android:background="#ffffffff" android:paddingLeft="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:groupIndicator="@null" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/group_charge_list_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="暂无群账信息,请新建群账..." />
+</LinearLayout>

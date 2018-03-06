@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <include
+            android:id="@+id/pay_top_layout"
+            layout="@layout/common_font_top_layout"/>
+
+    <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/pay_person_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60.0dip"
+            android:layout_below="@id/pay_top_layout">
+
+        <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/pay_person_image"
+                    android:background="@drawable/pay_money_person_image"
+                    android:layout_width="73.0dip"
+                    android:layout_height="73.0dip"/>
+
+            <TextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/pay_person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:text="CWWW"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:background="@drawable/pay_conter_icon"
+                android:layout_width="102.0dip"
+                android:layout_height="73.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"/>
+
+        <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/gain_person_image"
+                    android:background="@drawable/get_money_person_image"
+                    android:layout_width="73.0dip"
+                    android:layout_height="73.0dip"/>
+
+            <TextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/gain_person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:text="钢铁侠"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/pay_input_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_below="@id/pay_person_layout">
+
+        <EditText
+                android:textSize="18.0sp"
+                android:textColor="#ff000000"
+                android:id="@+id/textfield_et_label"
+                android:paddingTop="8.0dip"
+                android:paddingBottom="8.0dip"
+                android:layout_width="250.0dip"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                />
+
+        <LinearLayout
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="250.0dip"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textfield_et_label">
+
+            <TextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/common_font_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共应支付"/>
+
+            <TextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/common_font_color"
+                    android:id="@+id/pay_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥250.00"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:shadowColor="@color/white"
+            android:shadowRadius="0.0"
+            android:layout_alignParentBottom="true"
+            android:keyBackground="@drawable/custom_keyboard_selector"
+            android:keyTextColor="@color/black"/>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingTop="10.0dip"
+        android:paddingBottom="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/charge_group_image"
+            android:background="@drawable/charge_group_default"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_centerVertical="true"/>
+
+    <TextView
+            android:textSize="18.0sp"
+            android:textColor="#ff000000"
+            android:id="@+id/charge_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="复仇者联盟"
+            android:layout_toRightOf="@id/charge_group_image"
+            android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/group_item_up_layout"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+        <ImageView
+                android:id="@+id/charge_group_item_up_icon"
+                android:background="@drawable/group_up_icon"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:id="@+id/charge_group_item_down_icon"
+                android:background="@drawable/group_down_icon"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:gravity="right"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.0dip"
+            android:layout_toLeftOf="@id/group_item_up_layout"
+            android:layout_centerVertical="true">
+
+        <LinearLayout
+                android:gravity="center|right"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/common_font_color"
+                    android:id="@+id/charge_group_item_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应收"/>
+
+            <ImageView
+                    android:id="@+id/charge_group_item_stateIcon"
+                    android:background="@drawable/fragment_charge_sum_icon"
+                    android:visibility="gone"
+                    android:layout_width="15.599976dip"
+                    android:layout_height="15.599976dip"
+                    android:layout_marginLeft="3.0dip"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:textSize="16.0sp"
+                android:textColor="#fff64646"
+                android:id="@+id/charge_group_item_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:text="￥1246"/>
+    </LinearLayout>
+</RelativeLayout>

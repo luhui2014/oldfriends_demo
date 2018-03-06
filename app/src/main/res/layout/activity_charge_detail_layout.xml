@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/charge_detail_top_bg" android:layout_width="wrap_content"
+                    android:layout_height="180.0dip">
+        <include android:id="@+id/charge_detail_top" layout="@layout/common_transpant_top_layout"/>
+        <ImageView android:id="@+id/charge_detail_headImage" android:background="@drawable/charge_detail_user_image"
+                   android:layout_width="82.0dip" android:layout_height="82.0dip" android:layout_marginTop="10.0dip"
+                   android:layout_below="@id/charge_detail_top" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+                      android:layout_below="@id/charge_detail_headImage" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="-￥1400"/>
+            <ImageView android:background="@drawable/fragment_charge_sum_icon" android:layout_width="13.199982dip"
+                       android:layout_height="13.199982dip" android:layout_marginLeft="4.0dip"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:weightSum="3.0">
+        <TextView android:id="@+id/charge_detail_search" android:text="@string/charge_search"
+                  style="@style/Charge_detail_subTitle"/>
+        <TextView android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="22.0dip"
+                  android:layout_marginTop="-5.0dip"/>
+        <TextView android:id="@+id/charge_detail_account" android:text="@string/charge_account"
+                  style="@style/Charge_detail_subTitle"/>
+        <TextView android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="22.0dip"
+                  android:layout_marginTop="-5.0dip"/>
+        <TextView android:id="@+id/charge_detail_split" android:text="@string/charge_average"
+                  style="@style/Charge_detail_subTitle"/>
+    </LinearLayout>
+    <TextView style="@style/common_line"/>
+    <com.oldfriends.app.view.ListViewCompat android:id="@+id/charge_detail_list" android:scrollbars="none"
+                                            android:layout_width="fill_parent" android:layout_height="fill_parent"
+                                            android:listSelector="@color/transparent"/>
+</LinearLayout>

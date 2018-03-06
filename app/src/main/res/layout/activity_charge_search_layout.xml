@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/common_bottom_line_background" android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/common_top_color" android:layout_width="fill_parent"
+                        android:layout_height="50.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal"
+                          android:id="@+id/charge_search_left_layout" android:paddingLeft="10.0dip"
+                          android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="18.0sp" android:textColor="#ff000000"
+                          android:id="@+id/charge_search_left_btn" android:background="@drawable/back_icon"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginLeft="5.0dip" android:text="@string/common_back"/>
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="群账查询" android:layout_centerInParent="true"/>
+            <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:id="@+id/charge_search_time"
+                    android:paddingRight="10.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true">
+                <TextView
+                        android:textSize="16.0sp"
+                        android:textColor="@color/common_font_color"
+                        android:id="@+id/charge_search_time_font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:text="全部时间"/>
+
+                <ImageView
+                        android:background="@drawable/enter_big_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView style="@style/common_line"/>
+        <include layout="@layout/custom_split_line_layout"/>
+        <include layout="@layout/custom_charge_search_grouppay_layout"/>
+        <include layout="@layout/custom_split_line_layout"/>
+        <RelativeLayout android:background="#ffffffff" android:padding="12.0dip" android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="我的付款排名"/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color"
+                      android:id="@+id/charge_search_rank" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="第三名/4人"
+                      android:layout_alignParentRight="true"/>
+            <TextView android:textSize="13.0sp" android:textColor="@color/common_text_blue_color"
+                      android:paddingLeft="6.0dip" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="6.0dip"
+                      android:text="支付金额落后了,下次消费记得抢先买单哦~" android:layout_below="@id/charge_search_rank"/>
+        </RelativeLayout>
+        <include layout="@layout/custom_split_line_layout"/>
+        <include layout="@layout/custom_charge_search_piechart_layout"/>
+        <include layout="@layout/custom_split_line_layout"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/charge_search_export_layout"
+                        android:background="@drawable/common_list_click_selector" android:padding="12.0dip"
+                        android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="导出账单列表"/>
+            <ImageView android:background="@drawable/enter_icon" android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <TextView style="@style/common_line"/>
+    </LinearLayout>
+</ScrollView>

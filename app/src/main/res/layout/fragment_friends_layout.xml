@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/fragment_friends_top_layout" layout="@layout/common_top_layout"/>
+    <TextView style="@style/common_line"/>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:weightSum="3.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/fragment_friends_get"
+                      android:paddingTop="4.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip"
+                      android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="应收"/>
+            <TextView android:textSize="16.0sp" android:textColor="#fff64646" android:id="@+id/fragment_friends_getMoney"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/fragment_friends_sum"
+                      android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="合计"/>
+            <TextView android:textSize="16.0sp" android:textColor="#ff03c8aa" android:id="@+id/fragment_friends_sumMoney"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/fragment_friends_pay"
+                      android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="应付"/>
+            <TextView android:textSize="16.0sp" android:textColor="#ff03c8aa" android:id="@+id/fragment_friends_payMoney"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-￥0"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView style="@style/common_line"/>
+    <ImageView android:id="@+id/cursor" android:background="#ffff0000" android:layout_width="150.0dip"
+               android:layout_height="4.0dip" android:layout_marginTop="-3.0dip" android:scaleType="matrix"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/friends_search_edit_layout"
+                  android:background="#ffececec" android:paddingLeft="15.0dip" android:paddingRight="15.0dip"
+                  android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/friends_search_layout"
+                      android:background="@drawable/comment_search_border" android:paddingTop="4.0dip"
+                      android:paddingBottom="4.0dip" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" android:layout_marginTop="6.0dip"
+                      android:layout_marginBottom="6.0dip">
+            <ImageView android:background="@drawable/search_icon" android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+            <TextView android:textSize="16.0sp" android:textColor="#ffcccccc" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginLeft="3.0dip"
+                      android:text="@string/search"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView style="@style/common_line"/>
+    <com.oldfriends.app.view.PinnedHeaderListView android:id="@+id/friends_detail_list" android:scrollbars="none"
+                                                  android:layout_width="fill_parent" android:layout_height="fill_parent"
+                                                  android:listSelector="@color/transparent"/>
+</LinearLayout>

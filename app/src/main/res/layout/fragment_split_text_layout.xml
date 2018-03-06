@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/common_bottom_line_background"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <TextView
+            android:textSize="14.0sp"
+            android:textColor="#ff666666"
+            android:id="@+id/fragment_split_text_title"
+            android:paddingLeft="12.0dip"
+            android:paddingTop="10.0dip"
+            android:paddingBottom="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip"
+            android:text="输入各自成员承担的消费金额"/>
+
+    <RelativeLayout
+            android:id="@+id/fragment_split_text_bottom"
+            android:background="#ffffffff"
+            android:paddingLeft="12.0dip"
+            android:paddingTop="15.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingBottom="15.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总金额:"/>
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dip"
+                    android:text="￥"/>
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/fragment_split_money_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dip"
+                    android:text="0.00"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/fragment_split_percent_layout"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已分配"/>
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/fragment_split_allocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"/>
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=",剩余"/>
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/fragment_split_surplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100%"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/fragment_split_count_layout"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已分配"/>
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/fragment_split_count_allocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0份"/>
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=",每份"/>
+
+            <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/fragment_split_count_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/fragment_split_money_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/transparent"
+            android:divider="@null"
+            android:layout_above="@id/fragment_split_text_bottom"
+            android:layout_below="@id/fragment_split_text_title"/>
+
+
+</RelativeLayout>

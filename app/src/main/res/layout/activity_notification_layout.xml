@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bottom_line_background"
+              android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:shSwitch="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/notice_top_layout" layout="@layout/common_back_font_top_layout"/>
+    <TextView android:background="@color/common_line_color" android:layout_width="fill_parent"
+              android:layout_height="1.0dip" android:layout_marginTop="20.0dip"/>
+    <RelativeLayout android:background="@drawable/common_list_click_selector" android:padding="10.0dip"
+                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="新消息通知" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已开启"
+                  android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:background="@color/common_line_color" android:layout_width="fill_parent"
+              android:layout_height="1.0dip"/>
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color" android:paddingLeft="12.0dip"
+              android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:layout_marginTop="10.0dip"
+              android:text="若需要关闭或者打开&quot;友本帐&quot;的消息通知,可在群账设置里面关闭,或者手机的通知设置里进行更改."/>
+    <TextView android:background="@color/common_line_color" android:layout_width="fill_parent"
+              android:layout_height="1.0dip" android:layout_marginTop="20.0dip"/>
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="声音" android:layout_centerVertical="true"/>
+            <com.sevenheaven.iosswitch.ShSwitchView android:id="@+id/notice_switch_voice" android:layout_width="66.0dip"
+                                                    android:layout_height="44.0dip"
+                                                    android:layout_alignParentRight="true"
+                                                    shSwitch:tintColor="#ff62cc2f" shSwitch:shadowSpace="7.0dip"/>
+        </RelativeLayout>
+        <TextView android:background="@color/common_line_color" android:layout_width="fill_parent"
+                  android:layout_height="1.0dip" android:layout_marginLeft="12.0dip"/>
+        <RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:text="振动" android:layout_centerVertical="true"/>
+            <com.sevenheaven.iosswitch.ShSwitchView android:id="@+id/notice_switch_shake" android:layout_width="66.0dip"
+                                                    android:layout_height="44.0dip"
+                                                    android:layout_alignParentRight="true"
+                                                    shSwitch:tintColor="#ff62cc2f" shSwitch:shadowSpace="7.0dip"/>
+        </RelativeLayout>
+        <TextView android:background="@color/common_line_color" android:layout_width="fill_parent"
+                  android:layout_height="1.0dip"/>
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color" android:paddingLeft="12.0dip"
+              android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:layout_marginTop="10.0dip" android:text="在&quot;友本帐&quot;运行期间,设置是否需要声音或者振动"/>
+    <TextView android:background="@color/common_line_color" android:layout_width="fill_parent"
+              android:layout_height="1.0dip" android:layout_marginTop="20.0dip"/>
+    <RelativeLayout android:background="@color/white" android:paddingLeft="12.0dip" android:paddingRight="10.0dip"
+                    android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="只接受收款提醒" android:layout_centerVertical="true"/>
+        <com.sevenheaven.iosswitch.ShSwitchView android:id="@+id/notice_switch_only_getMoney"
+                                                android:layout_width="66.0dip" android:layout_height="44.0dip"
+                                                android:layout_alignParentRight="true" shSwitch:tintColor="#ff62cc2f"
+                                                shSwitch:shadowSpace="7.0dip"/>
+    </RelativeLayout>
+    <TextView android:background="@color/common_line_color" android:layout_width="fill_parent"
+              android:layout_height="1.0dip"/>
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color" android:paddingLeft="12.0dip"
+              android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:layout_marginTop="10.0dip" android:text="打开后,将只接受收款提醒的通知,新消息或账单变更将不以新消息进行通知"/>
+</LinearLayout>

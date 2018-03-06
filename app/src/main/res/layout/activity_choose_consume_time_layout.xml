@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/consume_time_top_layout" layout="@layout/common_font_top_layout"/>
+    <TextView style="@style/common_line"/>
+    <RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent"
+                    android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/consume_time_before"
+                      android:layout_width="40.0dip" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/back_icon" android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/consume_time_after"
+                      android:layout_width="40.0dip" android:layout_height="fill_parent"
+                      android:layout_alignParentRight="true">
+            <ImageView android:background="@drawable/enter_big_icon" android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <TextView android:textSize="17.0sp" android:textColor="@color/black" android:id="@+id/consume_time_current"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView style="@style/common_line"/>
+    <com.oldfriends.app.view.CalendarView android:layout_gravity="center_horizontal" android:id="@+id/customCalendar"
+                                          android:paddingTop="5.0dip" android:paddingBottom="5.0dip"
+                                          android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/common_top_color" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/common_font_left_layout" android:layout_width="55.0dip" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color" android:id="@+id/common_font_left_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/common_cancel" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@+id/common_font_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay" android:layout_centerInParent="true" />
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/common_font_right_layout" android:layout_width="55.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ffff0000" android:id="@+id/common_right_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/common_submit" />
+    </RelativeLayout>
+</RelativeLayout>

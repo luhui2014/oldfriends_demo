@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ImageView
+                android:id="@+id/charge_group_image"
+                android:background="@drawable/charge_group_default"
+                android:visibility="invisible"
+                android:layout_width="50.0dip"
+                android:layout_height="1.0dip" />
+
+        <TextView
+                android:textSize="16.0sp"
+                android:textColor="#ff929292"
+                android:id="@+id/charge_child_money_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip" android:text="应付" />
+
+        <TextView
+                android:textSize="16.0sp"
+                android:textColor="#ff929292"
+                android:id="@+id/charge_child_person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:text="美国队长" />
+
+        <TextView
+                android:textSize="18.0sp"
+                android:textColor="#ff03c8aa"
+                android:id="@+id/charge_child_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:text="-￥1246" />
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/charge_child_line"
+            android:layout_marginTop="8.0dip" style="@style/common_line" />
+
+</LinearLayout>

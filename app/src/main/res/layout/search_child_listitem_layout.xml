@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#ffffffff"
+              android:paddingTop="4.0dip"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="12.0dip"
+            android:paddingTop="4.0dip"
+            android:paddingBottom="6.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/search_list_child_image"
+                android:background="@drawable/search_child_default"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_centerVertical="true"/>
+
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip">
+
+            <TextView
+                    android:textSize="18.0sp"
+                    android:textColor="#ff000000"
+                    android:id="@+id/search_list_child_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="钢铁侠"/>
+
+            <TextView
+                    android:textSize="14.0sp"
+                    android:textColor="@color/common_font_color"
+                    android:id="@+id/search_list_child_nameContain"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:text="包含钢铁侠"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:id="@+id/search_list_child_bottom_line" android:layout_marginLeft="12.0dip"
+              style="@style/common_line"/>
+
+    <TextView
+            android:id="@+id/search_list_child_bottom_bg"
+            android:background="#ffececec"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="8.0dip"/>
+
+</LinearLayout>

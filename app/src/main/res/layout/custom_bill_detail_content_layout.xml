@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffffff" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/bill_detail_typeImage" android:background="@drawable/charge_default_icon" android:layout_width="73.0dip" android:layout_height="73.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/bill_edit_layout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_toRightOf="@id/bill_detail_typeImage">
+        <EditText android:textColorHint="@color/common_font_color" android:id="@+id/bill_detail_typeName" android:hint="测试名称" style="@style/BillEditText" />
+        <TextView android:id="@+id/bill_detail_typeName_line" android:background="@color/common_line_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <EditText android:textColorHint="@color/common_font_color" android:id="@+id/bill_detail_typeMoney" android:hint="消费金额" android:drawableLeft="@drawable/fragment_charge_sum_icon" android:drawablePadding="4.0dip" android:inputType="numberDecimal" style="@style/BillEditText" />
+        <TextView android:id="@+id/bill_detail_typeMoney_line" android:background="@color/common_line_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+</RelativeLayout>

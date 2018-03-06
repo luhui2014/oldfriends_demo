@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/choose_currency_head_china_layout" style="@style/choose_country_item_root">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/choose_currency_head_short" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CNY" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/choose_currency_head_sprit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="-" android:layout_toRightOf="@id/choose_currency_head_short" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/choose_currency_head_chineseName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="人民币" android:layout_toRightOf="@id/choose_currency_head_short" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@+id/choose_currency_listItem_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="(RMB￥)" android:layout_toRightOf="@id/choose_currency_head_chineseName" />
+        <ImageView android:id="@+id/china_number_enter" android:background="@drawable/enter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:layout_marginLeft="15.0dip" style="@style/common_line" />
+    <RelativeLayout android:id="@+id/choose_currency_head_taiwan_layout" style="@style/choose_country_item_root">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TWD" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="-" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="新台币" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="(NT＄)" />
+        </LinearLayout>
+        <ImageView android:background="@drawable/enter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:layout_marginLeft="15.0dip" style="@style/common_line" />
+    <RelativeLayout android:id="@+id/choose_currency_head_Hk_layout" style="@style/choose_country_item_root">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HKD" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="-" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="港元" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="(HK＄)" />
+        </LinearLayout>
+        <ImageView android:background="@drawable/enter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:layout_marginLeft="15.0dip" style="@style/common_line" />
+    <RelativeLayout android:id="@+id/choose_currency_head_macao_layout" style="@style/choose_country_item_root">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MOP" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="-" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="澳门元" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="(MOP)" />
+        </LinearLayout>
+        <ImageView android:background="@drawable/enter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

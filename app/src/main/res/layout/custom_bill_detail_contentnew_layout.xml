@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffffff" android:paddingTop="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/bill_detail_typeImage" android:background="@drawable/charge_detail_paytype_default" android:layout_width="73.0dip" android:layout_height="73.0dip" />
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@+id/bill_edit_layout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="73.0dip" android:layout_marginLeft="10.0dip" android:weightSum="2.0" android:layout_toRightOf="@id/bill_detail_typeImage">
+        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@+id/bill_detail_typeName" android:text="测试名称" android:layout_weight="1.0" style="@style/BillEditText" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@+id/bill_detail_typeMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1600.00" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/bill_detail_typeImage" android:layout_below="@id/bill_edit_layout">
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消费日期: " />
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_font_color" android:id="@+id/bill_detail_currentTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015年11月30" />
+    </LinearLayout>
+</RelativeLayout>

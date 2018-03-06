@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/common_backFont_top_layout" android:background="@color/common_top_color"
+                android:layout_width="fill_parent" android:layout_height="50.0dip"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                  android:id="@+id/common_backFont_left_layout" android:paddingLeft="10.0dip"
+                  android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/back_icon" android:layout_width="10.0dip"
+                   android:layout_height="18.0dip"/>
+        <TextView android:textSize="18.0sp" android:textColor="@color/common_font_color"
+                  android:id="@+id/common_backFont_text" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:layout_marginLeft="4.0dip"
+                  android:text="@string/common_back"/>
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@+id/common_backFont_title"
+              android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好友备注名"
+              android:layout_centerInParent="true"/>
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center_vertical"
+              android:id="@+id/common_backFont_finish" android:paddingLeft="10.0dip" android:paddingRight="15.0dip"
+              android:layout_width="wrap_content" android:layout_height="fill_parent"
+              android:text="@string/common_finish" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bottom_line_background"
+              android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/bill_detail_top_layout" layout="@layout/common_top_layout"/>
+    <TextView style="@style/common_line"/>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                      android:layout_height="fill_parent">
+            <include layout="@layout/custom_bill_detail_contentnew_layout"/>
+            <TextView style="@style/common_line"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffcdf4ee"
+                          android:paddingTop="12.0dip" android:paddingBottom="12.0dip"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:text="我应"/>
+                <TextView android:textSize="18.0sp" android:textColor="@color/black"
+                          android:id="@+id/bill_detail_mine_action" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:text="支付"/>
+                <TextView android:textSize="18.0sp" android:textColor="@color/black"
+                          android:id="@+id/bill_detail_mine_action_person" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="钢铁侠"/>
+                <TextView android:textSize="18.0sp" android:textColor="#ff03c9a9" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="￥1200"/>
+                <ImageView android:background="@drawable/fragment_charge_sum_icon" android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" android:layout_marginLeft="5.0dip"/>
+            </LinearLayout>
+            <TextView style="@style/common_line"/>
+            <ListView android:id="@+id/custom_bill_detail_pay_list" android:background="@color/white"
+                      android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:listSelector="@color/transparent" android:divider="@color/transparent"/>
+            <TextView style="@style/common_line"/>
+            <TextView android:layout_marginTop="20.0dip" style="@style/common_line"/>
+            <RelativeLayout android:background="#ffffffff" android:paddingLeft="12.0dip" android:paddingTop="8.0dip"
+                            android:paddingRight="12.0dip" android:paddingBottom="8.0dip"
+                            android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@+id/bill_detail_action"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更新"/>
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_font_color"
+                          android:id="@+id/bill_detail_action_person" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="白展堂"
+                          android:layout_toRightOf="@id/bill_detail_action"/>
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_font_color"
+                          android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:layout_marginLeft="3.0dip" android:text="新建了本账单"
+                          android:layout_toRightOf="@id/bill_detail_action_person"/>
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_font_color"
+                          android:id="@+id/bill_detail_action_time" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:text="2015-11-30"
+                          android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <TextView style="@style/common_line"/>
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center"
+                      android:id="@+id/custom_bill_detail_delete_btn"
+                      android:background="@drawable/charge_setting_exit_bg" android:layout_width="fill_parent"
+                      android:layout_height="40.0dip" android:layout_margin="15.0dip" android:text="删除本账单"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

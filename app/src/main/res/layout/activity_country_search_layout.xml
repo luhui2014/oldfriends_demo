@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/common_top_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/country_search_back"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="11.5dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:background="@drawable/back_icon" />
+        </LinearLayout>
+
+        <com.oldfriends.app.view.ClearEditText
+            android:id="@+id/country_search_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="65.0dip"
+            android:layout_toRightOf="@id/country_search_back"
+            android:background="@drawable/sorlistview_search_bar_edit_selector"
+            android:drawableLeft="@drawable/choosecity_search_icon_hover"
+            android:drawablePadding="4.0dip"
+            android:hint="@string/search"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="5.0dip"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textColorHint="#ff929292"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@+id/country_search_cancel_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:text="@string/common_cancel"
+            android:textColor="@color/edit_cursor_color"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <TextView style="@style/common_line" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/charge_pop_top" android:layout_width="110.0dip"
+               android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/custom_pop_add_newCharge"
+                  android:background="@drawable/charge_pop_line" android:paddingLeft="8.0dip"
+                  android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip"
+                  android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="25.0dip"
+                      android:layout_height="25.0dip" android:layout_marginLeft="5.0dip"
+                      android:layout_marginTop="2.0dip">
+            <ImageView android:background="@drawable/add_newcharge_icon" android:layout_width="20.0dip"
+                       android:layout_height="20.0dip"/>
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/popwindow_text_click"
+                  android:layout_width="75.0dip" android:layout_height="wrap_content"
+                  android:text="@string/add_new_charge"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/charge_pop_line"
+                  android:layout_width="fill_parent" android:layout_height="0.5dip">
+        <TextView android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="1.0dip"
+                  android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/custom_pop_scan"
+                  android:background="@drawable/charge_pop_line" android:paddingLeft="8.0dip"
+                  android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="25.0dip"
+                      android:layout_height="25.0dip" android:layout_marginLeft="5.0dip"
+                      android:layout_marginTop="2.0dip">
+            <ImageView android:background="@drawable/menu_scan_icon" android:layout_width="20.0dip"
+                       android:layout_height="20.0dip"/>
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/popwindow_text_click"
+                  android:layout_width="75.0dip" android:layout_height="wrap_content" android:text="@string/scan"/>
+    </LinearLayout>
+    <ImageView android:background="@drawable/charge_pop_bottom" android:layout_width="fill_parent"
+               android:layout_height="wrap_content"/>
+</LinearLayout>

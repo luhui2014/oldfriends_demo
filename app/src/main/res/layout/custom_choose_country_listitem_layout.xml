@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/choose_country_listItem_layout" style="@style/choose_country_item_root">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black"
+                  android:id="@+id/choose_country_listItem_englishName" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="China"/>
+        <TextView android:textSize="16.0sp" android:textColor="@color/black"
+                  android:id="@+id/choose_country_listItem_chineseName" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="中国"
+                  android:layout_toRightOf="@id/choose_country_listItem_englishName"/>
+        <ImageView android:id="@+id/choose_country_listItem_enter" android:background="@drawable/enter_icon"
+                   android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color"
+                  android:id="@+id/choose_country_listItem_number" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:layout_marginRight="8.0dip"
+                  android:layout_toLeftOf="@id/choose_country_listItem_enter"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/choose_country_listItem_line" android:layout_marginLeft="15.0dip"
+              style="@style/common_line"/>
+</LinearLayout>

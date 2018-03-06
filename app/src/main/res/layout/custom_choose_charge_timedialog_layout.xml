@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/charge_timeChoose_all" android:text="全部时间" style="@style/Charge_choose_time_dialog" />
+    <TextView android:background="@color/common_bottom_line_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:id="@+id/charge_timeChoose_month" android:text="本月" style="@style/Charge_choose_time_dialog" />
+    <TextView android:background="@color/common_bottom_line_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:id="@+id/charge_timeChoose_season" android:text="本季度" style="@style/Charge_choose_time_dialog" />
+    <TextView android:background="@color/common_bottom_line_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:id="@+id/charge_timeChoose_year" android:text="本年" style="@style/Charge_choose_time_dialog" />
+    <TextView android:id="@+id/charge_timeChoose_cancel" android:layout_marginTop="10.0dip" android:text="取消" style="@style/Charge_choose_time_dialog" />
+</LinearLayout>

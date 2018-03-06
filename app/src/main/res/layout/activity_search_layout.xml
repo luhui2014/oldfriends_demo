@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal"
+                    android:background="@color/common_top_color" android:paddingLeft="5.0dip"
+                    android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_back"
+                      android:visibility="gone" android:layout_width="40.0dip" android:layout_height="fill_parent"
+                      android:layout_marginTop="1.0dip" android:layout_centerVertical="true">
+            <TextView android:background="@drawable/back_icon" android:layout_width="11.5dip"
+                      android:layout_height="20.0dip" android:layout_marginLeft="10.0dip"/>
+        </LinearLayout>
+        <com.oldfriends.app.view.ClearEditText android:textSize="15.0dip" android:id="@+id/search_edit"
+                                               android:background="@drawable/sorlistview_search_bar_edit_selector"
+                                               android:paddingLeft="6.0dip" android:paddingRight="5.0dip"
+                                               android:layout_width="fill_parent" android:layout_height="32.0dip"
+                                               android:layout_marginLeft="10.0dip" android:layout_marginRight="60.0dip"
+                                               android:hint="@string/search_hint" android:singleLine="true"
+                                               android:drawableLeft="@drawable/choosecity_search_icon_hover"
+                                               android:drawablePadding="4.0dip"
+                                               android:layout_toRightOf="@id/search_back"
+                                               android:layout_centerVertical="true"/>
+        <TextView android:textSize="16.0sp" android:textColor="#ffff0000" android:id="@+id/home_search_icon"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginRight="15.0dip" android:text="@string/common_cancel"
+                  android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ExpandableListView android:id="@+id/search_list" android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" android:listSelector="@color/transparent"
+                        android:groupIndicator="@null"/>
+</LinearLayout>

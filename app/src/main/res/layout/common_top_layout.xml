@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/common_top_color"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+
+    <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/common_left_layout"
+            android:layout_width="45.0dip"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:textSize="18.0sp"
+                android:textColor="#ff000000"
+                android:id="@+id/common_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+            android:textSize="18.0sp"
+            android:textColor="#ff000000"
+            android:id="@+id/common_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:id="@+id/common_right_layout"
+            android:layout_width="45.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10.0dip"
+            android:layout_alignParentRight="true">
+
+        <TextView
+                android:textSize="18.0sp"
+                android:textColor="#ff333333"
+                android:id="@+id/common_right_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        <ImageView
+                android:id="@+id/common_right_image"
+                android:layout_width="19.0dip"
+                android:layout_height="18.5dip"
+                android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

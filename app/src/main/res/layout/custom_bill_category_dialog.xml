@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:background="@color/common_bottom_line_background" android:paddingTop="4.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@+id/btn_confirm" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="完成" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffe9e9e9" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.oldfriends.app.view.wheel.WheelView android:id="@+id/bill_category_left" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.oldfriends.app.view.wheel.WheelView android:id="@+id/bill_category_right" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

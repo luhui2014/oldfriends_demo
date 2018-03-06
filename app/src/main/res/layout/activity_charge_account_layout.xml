@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <include android:id="@+id/charge_account_top_layout" layout="@layout/common_top_layout"/>
+
+    <TextView style="@style/common_line"/>
+
+    <TextView
+            android:textSize="14.0sp"
+            android:textColor="@color/common_font_color"
+            android:background="@color/common_bottom_line_background"
+            android:paddingLeft="12.0dip"
+            android:paddingTop="8.0dip" android:paddingBottom="8.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_charge_number_hint"/>
+
+    <TextView style="@style/common_line"/>
+
+    <ListView
+            android:id="@+id/charge_account_member_list"
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="@color/transparent"/>
+</LinearLayout>

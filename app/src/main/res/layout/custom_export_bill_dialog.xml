@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="20.0dip"
+                  android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/export_bill_print_icon" android:layout_width="50.0dip"
+                       android:layout_height="50.0dip"/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="打印"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+            <ImageView android:background="@drawable/export_bill_mail_icon" android:layout_width="50.0dip"
+                       android:layout_height="50.0dip"/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="邮件"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:background="@color/common_line_color" android:layout_width="fill_parent"
+              android:layout_height="1.0dip"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="20.0dip"
+                  android:paddingTop="8.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/export_bill_weixin" android:layout_width="50.0dip"
+                       android:layout_height="50.0dip"/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="微信"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+            <ImageView android:background="@drawable/export_bill_friend" android:layout_width="50.0dip"
+                       android:layout_height="50.0dip"/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="朋友圈"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+            <ImageView android:background="@drawable/export_bill_qq" android:layout_width="50.0dip"
+                       android:layout_height="50.0dip"/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="QQ"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+            <ImageView android:background="@drawable/export_bill_weibo" android:layout_width="50.0dip"
+                       android:layout_height="50.0dip"/>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="微博"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/userHead_dialog_cancel" android:layout_marginTop="10.0dip" android:text="取消"
+              style="@style/Charge_choose_time_dialog"/>
+</LinearLayout>

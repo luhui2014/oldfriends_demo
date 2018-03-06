@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:text="群账消费类型" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <com.oldfriends.app.view.PieChart01View android:id="@+id/pieCharView" android:layout_width="250.0dip" android:layout_height="130.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/common_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="餐饮 ￥5464.00" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/common_text_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="娱乐 ￥3215.00" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/common_text_click_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生活 ￥214.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交通 ￥800.00" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="其他 ￥546.00" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

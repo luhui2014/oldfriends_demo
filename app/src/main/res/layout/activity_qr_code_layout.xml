@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff929292" android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/qr_code_top_layout" layout="@layout/common_back_font_top_layout"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/custom_qrcode_style"
+                  android:paddingLeft="40.0dip" android:paddingTop="20.0dip" android:paddingRight="40.0dip"
+                  android:paddingBottom="15.0dip" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:layout_marginLeft="20.0dip"
+                  android:layout_marginTop="60.0dip" android:layout_marginRight="20.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
+                      android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/charge_detail_user_image" android:layout_width="50.0dip"
+                       android:layout_height="50.0dip"/>
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@+id/qr_code_friend_name"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginLeft="10.0dip" android:text="SADOYO"/>
+        </LinearLayout>
+        <ImageView android:background="@drawable/qr_code_default" android:layout_width="wrap_content"
+                   android:layout_height="250.0dip" android:layout_marginTop="10.0dip"/>
+        <TextView android:textSize="18.0sp" android:textColor="@color/common_font_color" android:gravity="center"
+                  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_marginTop="10.0dip" android:text="扫一扫上方二维码,添加好友"/>
+    </LinearLayout>
+</LinearLayout>
